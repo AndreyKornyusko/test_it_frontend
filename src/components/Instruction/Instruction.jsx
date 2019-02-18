@@ -10,7 +10,7 @@ const part = {
       value: 100
     },
     size: {
-      value: 2
+      value: 1
     }
   },
   interactivity: {
@@ -34,7 +34,7 @@ const Instructions = () => {
           <h1 className={style.title}> {instruction.title}</h1>
           <p>{instruction.post}</p>
         </div>
-        <div className={style.wrapper_btn}>
+        <div className={style.wrapperBtn}>
           <NavLink className={style.btn} to="/test">
             перейти к вопросам
           </NavLink> 

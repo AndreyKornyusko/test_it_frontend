@@ -8,17 +8,15 @@ const Header = () => {
   return (
     <header className={style.Header}>
       <div className={style.Wrapper}>
-      <Link to="/">
-        <div className={style.Logo}> 
-         
+        <Link className={style.logo} to="/">
+          <div className={style.LogoWrap}>
             <div>
               <span className={style.logoTag}>&lt;</span>
-              <span >it</span>
+              <span>it</span>
               <span className={style.logoTag}>&gt;</span>
             </div>
-            <span > test </span>
-          
-        </div> 
+            <span> test </span>
+          </div>
         </Link>
         {/* <div className={style.Login}>
               <span> Логин   &#9776; </span>

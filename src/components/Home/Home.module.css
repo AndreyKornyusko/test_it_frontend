@@ -1,5 +1,11 @@
 @import "../../theme/palette.modules.css";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .pageWrap {
   position: relative;
   background: linear-gradient(144deg, #6039aa, #000);
@@ -21,9 +27,7 @@
   right: 50%;
   transform: translateX(-50%) translateY(-50%);
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
-  /* padding-top: 45px; */
+  padding-top: 40px;
 }
 
 .title {
@@ -48,26 +52,30 @@
 }
 
 .btnWrap {
-  /* width: 100%; */
   width: 240px;
   height: 50px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--macaroni-and-cheese);
+
 }
 
 .btn {
+  display: block;
+  width: 100%;
   border: none;
-  border-radius: 5px;
   color: #fff;
   font-size: 13px;
   font-family: "Ubuntu";
-  padding: 15px 25px;
+  text-align: center;
   font-weight: 800;
-  background-color: var(--macaroni-and-cheese);
   text-decoration: none;
   text-transform: uppercase;
+
 }
 
 .btn:hover {
@@ -86,9 +94,7 @@
 
   .postWrap {
     top: 260px;
-    padding-left: 105px;
-    padding-right: 105px;
-    padding-top: 226px;
+    padding-top: 200px;
   }
   .title {
     font-size: 40px;
@@ -108,16 +114,12 @@
     height: 60px;
   }
   .btn {
-    font-size: 18px;
+    font-size: 18px; 
   }
 }
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
-  .postWrap {
-    padding-top: 220px;
-  }
-
   .post {
     width: 770px;
     font-size: 18px;
